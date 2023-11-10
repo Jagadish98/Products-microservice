@@ -1,13 +1,8 @@
 # Products-microservice
 
-
-# Project Title
-
 A brief description of what this project does and who it's for
 
 This project provides well defined API's to perform CRUD operations on product inventory database.
-
-
 
 
 ## API Reference
@@ -191,7 +186,34 @@ If product not found with sku, then following response will be shown.
 }
 ```
 
+#### Store Product image for a product identified by product-sku.
+
+```http
+  POST api/products/uploadPic/${sku}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `sku`      | `string` | **Required**. sku of product to update. |
+
+Input : form-data. Key : image
+
+Output : returns the product for which image was added.
+
+#### Get the product image for a product identified by product-sku.
+
+
+```http
+  GET api/products/getImage/${sku}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `sku`      | `string` | **Required**. sku of product to fetch. |
+
+Output : Image.
 
 ## Authors
 
+-Jagadish M
 - Jagadish M
