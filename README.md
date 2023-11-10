@@ -7,6 +7,7 @@ This project provides well defined API's to perform CRUD operations on product i
 For POST, DELETE and PUT opearations. Basic auth has to be included in request.
 
 username : admin
+
 password : admin12345
 
 ## API Reference
